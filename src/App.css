@@ -2,3 +2,21 @@
   text-align: center;
 }
 
+:root{
+  --primaryColor : #ef4f5f;
+  --text-color: #ffffff;
+  --heaingColor: black;
+}
+
+button{
+  border: none;
+  margin: 1rem;
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 15px;
+  background-color: var(--primaryColor);
+}
+button:hover{
+  padding: 20px;
+  font-weight: 700;
+}

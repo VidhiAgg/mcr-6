@@ -1,0 +1,39 @@
+.resturant-card{
+display: flex;
+flex-direction: column;
+cursor: pointer;
+
+}
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   text-align: left;
+    gap: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+.resturant-item{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.resturant-item img{
+    width: 250px;
+    height: 270px;
+}
+
+.resturant-item p{
+    color: gray;
+}
+
+.header-menu{
+    display: flex;
+    color: black;
+}
