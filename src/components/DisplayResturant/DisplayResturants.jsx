@@ -4,10 +4,7 @@ import "./Resturant.css"
 import { useNavigate } from 'react-router-dom';
 
 const DisplayResturants = ({cusineID}) => {
-
-
-    const {resturants} = useContext(FoodContext);
-
+const {resturants} = useContext(FoodContext);
 
 const getResturants = resturants?.filter(resturant => resturant.cuisine_id === parseInt(cusineID))
 

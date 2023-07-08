@@ -1,15 +1,13 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import "./Resturant.css"
 import { ArrowBackIosNew } from '@mui/icons-material';
 import { FoodContext } from '../../context/FoodContext';
-
-
 const ResturantDetail = () => {
   const {id} = useParams();
   const {resturants} = useContext(FoodContext);
   const getResturant = resturants?.filter(data => data.id === parseInt(id));
-const [showAddModal, setAddModal] = useState(false);
+// const [showAddModal, setAddModal] = useState(false);
 
   const navigate = useNavigate();
 
